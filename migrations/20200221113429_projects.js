@@ -14,6 +14,7 @@ exports.up = function(knex, Promise) {
       tbl.increments();
       tbl.string("task", 30).notNullable();
       tbl.string("taskDescription").notNullable();
+      tbl.string('notes')
       tbl
         .integer("projectId")
         .notNullable()
